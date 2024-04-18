@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainF));
             button1 = new Button();
             richTextBox1 = new RichTextBox();
             textBox1 = new TextBox();
@@ -124,6 +125,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             Name = "MainF";
             Text = "Form1";
